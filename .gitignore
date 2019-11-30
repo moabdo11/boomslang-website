@@ -1,0 +1,4 @@
+.envrc
+python-env/
+*.pyc
+application/api/boomslang/db.sqlite3
