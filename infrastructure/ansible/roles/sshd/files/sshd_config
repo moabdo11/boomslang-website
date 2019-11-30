@@ -1,0 +1,13 @@
+# This is the sshd_server system-wide configuration file.  See
+# ssd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/bin:/bin:/usr/sbin:/sbin
+
+
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem    sftp    /usr/lib/openssh/sftp-server

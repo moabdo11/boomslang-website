@@ -1,0 +1,7 @@
+--- # Configure Argos server
+- hosts: default
+  roles:
+    - ./roles/sshd
+    - ./roles/docker
+    - ./roles/docker-compose
+    - ./roles/users

@@ -1,0 +1,27 @@
+--- # Configure the server to have the correct user and permissions
+- name: "Add the boomslang user group"
+  group:
+    name: "boomslang"
+    state: "present"
+
+- name: "Add the boomslang user"
+  user:
+    name: "boomslang"
+    password: "{{lookup('env', 'PROJECT_USER_PASSWORD') }}"
+    group: "boomslang"
+    groups: "sudo, docker"
+    shell: "/bin/bash"
+
+- name: "Add ssh key for boomslang user"
+  authorized_key:
+    user: "boomslang"
+    key: "{{lookup('file', 'boomslang.pub') }}"
+    state: "present"
+
+- name: "Add custom sudoers file"
+  copy:
+    src: "sudogroup"
+    dest: "/etc/sudoers.d/sudogroup"
+    mode: "0600"
+    owner: "root"
+    group: "root"

@@ -1,0 +1,25 @@
+--- # install docker-ce
+- name: install prereqs
+  apt:
+    name: "{{item}}"
+    state: present
+    update_cache: yes
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties-common
+
+- name: add docker gpg key
+  apt_key:
+    url: https://download.docker.com/linux/debian/gpg
+
+- name: add docker apt repository
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/debian {{ansible_distribution_release}} stable
+
+- name: install docker-ce
+  apt:
+    name: docker-ce
+    state: present
+    update_cache: yes
