@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html lang="en-US">
   {% include "components/head.html" %}
@@ -56,10 +58,11 @@
       </nav>
       <div class="row switcher-content active" data-name="message-me">
         <div class="col-lg-8">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" method="POST" action="/submit-form/">
+              {% csrf_token %}
                 <div class="form-row">
                   <div class="col-md-4 mt-4 wrap-input100">
-                      <input type="text" class="form-control input100" id="validationCustom01" placeholder="Your name" required>
+                      <input type="text" class="form-control input100" id="validationCustom01" name="name" placeholder="Your name" required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
 							          <i class="fa fa-user" aria-hidden="true"></i>
@@ -71,7 +74,7 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class= "col-md-4 mb-3 class wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
-                      <input type="text" class="form-control input100" id="validationCustom02"  required>
+                      <input type="email" class="form-control input100" id="validationCustom02" name="email" placeholder="your email"  required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
 							          <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -81,7 +84,7 @@
                       </div>
                     </div>
                     <div class="col-md-4 mb-3 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
-                      <input type="tel" class="form-control input100" id="form_phone" placeholder="(617)-866-7777" required>
+                      <input type="tel" class="form-control input100" id="form_phone" name="phone_number" placeholder="(617)-866-7777" required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
 							          <i class="fa fa-phone" aria-hidden="true"></i>
@@ -95,7 +98,7 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-md-4  wrap-input100">
-                      <input type="text" class="form-control input100" id="validationCustom03" placeholder="Current City" required>
+                      <input type="text" class="form-control input100" id="validationCustom03" name="city" placeholder="Current City" required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
 							          <i class="fa fa-city" aria-hidden="true"></i>
@@ -105,7 +108,7 @@
                       </div>
                     </div>
                     <div class="col-md-4 wrap-input100">
-                      <select class="custom-select input100 " id="validationCustom04" required>
+                      <select class="custom-select input100 " name="state" id="validationCustom04" required>
                         <option selected disabled value="">STATE</option>
                         <option>...</option>
                       </select>
@@ -114,7 +117,7 @@
                       </div>
                     </div>
                     <div class="col-md-4 wrap-input100">
-                      <input type="text" class="form-control input100" placeholder="Zip code" id="validationCustom05" required>
+                      <input type="text" class="form-control input100" name="zip" placeholder="Zip code" id="validationCustom05" required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
 							          <i class="fa fa-city" aria-hidden="true"></i>
@@ -128,7 +131,7 @@
                   <div class="col-md-6 mt-4 mb-3 wrap-input100">
                       <div class="form-group">
                           <label for="form_need">Please specify a subject *</label>
-                          <select id="form_need" name="need" class="form-control input100" required="required" data-error="Please specify your need.">
+                          <select id="form_need" name="subject" class="form-control input100" required="required" data-error="Please specify your need.">
                               <option value=""></option>
                               <option value="Request quotation">Request quotation</option>
                               <option value="Request order status">Request order status</option>
@@ -142,7 +145,7 @@
                   </div>
                   <div class="col-md-12 mb-3">
                       <div class="form-group wrap-input100 validate-input">
-                          <textarea id="form_message" name="message" class="form-control input100" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <textarea id="form_message" name="message" class="form-control input100" name="message" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                           <span class="focus-input100"></span>
                           <div class="help-block with-errors"></div>
                       </div>
@@ -198,8 +201,8 @@
         <div id="book-me-section">
         <h3 class="h2"> I'm <span class="accent">available</span> for new projects starting December 2nd.</h3>
         <p class="opaque">I've been told that I blow expectations out of the water &mdash; I'll try to be more careful with yours, but I can't make any promises. </p>
-        <a href="contact.html" class="btn btn-primary btn-hover">Let's Do This</a>
-        <img class="lazy" data-img-src="/Users/moabdo-business/Desktop/BOOMSLANG/css/IMG_0083.jpeg" alt="A picture of me, smiling.">
+        <a href="/contact/" class="btn btn-primary btn-hover">Let's Do This</a>
+        <img class="lazy" data-img-src="{% static "css/IMG_0083.jpeg" %}" alt="A picture of me, smiling.">
         </div>
         </div>
         </div>
