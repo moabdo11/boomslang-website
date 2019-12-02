@@ -11,24 +11,22 @@
 
 <div class="container">
 
-<a class="navbar-brand" href="/" aria-label="Navigate to Homepage"><img src=""></a>
+<a class="navbar-brand" href="/" aria-label="Navigate to Homepage"><img src="{% static "assets/boomslang-logo.svg" %}"></a>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon lazy-bg" data-img-src="data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"></span>
 </button>
 <div class="collapse navbar-collapse" id="nav-primary">
 <a href="#" id="nav-close" class="kbs-close"></a>
-<ul id="menu-primary" class="navbar-nav ml-auto"><li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-59"><a href="index.html">Home</a></li>
+<ul id="menu-primary" class="navbar-nav ml-auto"><li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-59"><a href="/">Home</a></li>
 <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-66"><a href="#">About</a>
 <ul class="sub-menu">
 <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href=""> Our Story</a></li>
-<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-27 current_page_item menu-item-63"><a href="services.html" aria-current="page"> Our services</a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-27 current_page_item menu-item-63"><a href="/services/" aria-current="page"> Our services</a></li>
 <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="/common-questions">FAQ</a></li>
 </ul>
 </li>
-<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a href="#">Case Studies</a></li>
-<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="#">Articles</a></li>
-<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="contact.html">Contact</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="/contact/">Contact</a></li>
 </ul>
 </div>
 </div>
@@ -55,9 +53,9 @@
 <div class="row align-items-center process-item">
 
 <div class="col-md-5 col-lg-4">
-<span class="kbs-icon" aria-hidden="true"><i class="fas fa-map"></i></span>
+<span class="kbs-icon" aria-hidden="true"><i class="fas fa-home"></i></span>
 <h2>Property Management</h2>
-<p class="opaque">We're Always a Few Steps Ahead.</p>
+<p class="opaque">We're always a few steps ahead.</p>
 <ul>
 <li><strong>Marketing:</strong>Campaigns that deliver the highest possible ROI.</li>
 <li><strong>Tenant Screening:</strong> Thorough screening. Great landlords deserve great tenants.</li>
@@ -68,19 +66,19 @@
 </div>
 
 <div class="col-md-7 offset-lg-1">
-    <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    <img src="{% static "assets/property_management.jpg" %}" alt="investment consulting photo">
 </div>
 </div>
 <div class="row align-items-center process-item">
 
 <div class="col-md-7">
-    <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    <img src="{% static "assets/investment consulting.jpg" %}" alt="investment consulting photo">
 </div>
 
-<div class="col-md-5 col-lg-4 offset-lg-1">
+<div class="col-md-5 col-lg-4 offset-lg-1" id="investment-consulting">
 <span class="kbs-icon" aria-hidden="true"><i class="fas fa-flask"></i></span>
 <h2>Investment Consulting</h2>
-<p class="opaque">Your Path to Economic Independence.</p>
+<p class="opaque">Your path to economic independence.</p>
 <ul>
 <li><strong>Location and Market Analysis</strong></li>
 <li><strong>Economic Feasability Analysis</strong></li>
@@ -94,9 +92,9 @@
 <div class="row align-items-center process-item">
 
 <div class="col-md-5 col-lg-4">
-<span class="kbs-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
+<span class="kbs-icon" aria-hidden="true"><i class="fas fa-sign"></i></span>
 <h2>Sales & Brokerage </h2>
-<p class="opaque">Maximum Exposure. Exclusive Listings.</p>
+<p class="opaque">Maximum exposure. exclusive Listings.</p>
 <ul>
 <li><strong>Comeprehensive Market Analysis.</strong></li>
 <li><strong>Pricing and Sales Strategy.</strong></li>
@@ -107,23 +105,20 @@
 </div>
 
 <div class="col-md-7 offset-lg-1">
-     <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    <img src="{% static "assets/sales_brokerage.jpg" %}" alt="investment consulting photo">
 </div>
 </div>
-
-
-
         
         <div class="row align-items-center process-item">
         
         <div class="col-md-7">
-            <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+            <img src="{% static "assets/construction management.jpg" %}" alt="investment consulting photo">
         </div>
         
         <div class="col-md-5 col-lg-4 offset-lg-1">
         <span class="kbs-icon" aria-hidden="true"><i class="fas fa-flask"></i></span>
         <h2>Construction Management</h2>
-        <p class="opaque">On Time and on Budget.
+        <p class="opaque">On time and on budget.
         </p>
         <ul>
         <li><strong>General Contracting.</strong></li>
@@ -138,7 +133,7 @@
         <div class="col-md-5 col-lg-4">
         <span class="kbs-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
         <h2>Selecting & Repositioning Property </h2>
-        <p class="opaque">Endless Opportunities.</p>
+        <p class="opaque">Endless opportunities.</p>
         <ul>
         <li><strong>Rehabilitating and Retrofitting Properties.</strong></li>
         <li><strong>Leasing and Marketing Campaigns.</strong></li>
@@ -149,7 +144,7 @@
         </div>
         
         <div class="col-md-7 offset-lg-1">
-            <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+            <img src="{% static "assets/asset_repositioning.jpg" %}" alt="investment consulting photo">
         </div>
         </div>
 
@@ -171,10 +166,12 @@
 <div class="cw-container">
 <a href="#" class="cw-toggler cw-item" aria-label="Open Contact Options"><span aria-hidden="true" class="callout d-none d-md-block"><i class="fas fa-envelope"></i>Rather just email me?</span><i class="fas fa-comments"></i><div class="kbs-close" aria-label="Close Contact Options"></div></a>
 <a aria-label="Email" href="/cdn-cgi/l/email-protection#5a373b28391a3133363538232e3f292e2f3e3335297435283d" target="" class="cw-item "><span aria-hidden="true" class="callout">Email me.</span><i class="fas fa-envelope"></i></a>
-<a aria-label="Phone" href="tel:678-543-3265" target="" class="cw-item "><span aria-hidden="true" class="callout">Call me.</span><i class="fas fa-phone"></i></a>
-<a aria-label="Appointment" href="https://calendly.com/kbs-marc/initial-consultation/" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book me.</span><i class="fas fa-calendar-alt"></i></a>
+<a aria-label="Phone" href="tel:617-866-7777" target="" class="cw-item "><span aria-hidden="true" class="callout">Call us.</span><i class="fas fa-phone"></i></a>
+<a aria-label="Appointment" href="" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book us.</span><i class="fas fa-calendar-alt"></i></a>
 </div>
 </div>
+
+
 <footer>
     <div aria-hidden="true" class="footer-separator"></div>
     <img aria-hidden="true" class="footer-logo lazy" data-img-src="" />
@@ -184,7 +181,7 @@
     <div id="book-me-section">
     <h3 class="h2"> We're <span class="accent">currently</span> accepting new clients.</h3>
     <p class="opaque">We've been told that we blow expectations out of the water &mdash; We'll try to be more careful with yours, but we can't make any promises. </p>
-    <a href="contact.html" class="btn btn-primary btn-hover">Let's Do This</a>
+    <a href="/contact/" class="btn btn-primary btn-hover">Let's Do This</a>
     <img class="lazy" data-img-src="{% static "css/IMG_0083.jpeg" %}" alt="A picture of Mo, smiling.">
     </div>
     </div>
@@ -199,7 +196,7 @@
     <div id="footer-2" class="col-md-2">
     <p> </p>
     <ul>
-    <li><a target="" href="contact.htmls">Contact</a></li><li><a target="" href="https://boomslang.com/partnerships">Partnerships</a></li><li><a target="_blank" href="https://www.reddit.com/user/squagem">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
+    <li><a target="" href="/contact/">Contact</a></li><li><a target="" href="https://boomslang.com/partnerships">Partnerships</a></li><li><a target="_blank" href="">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
     </ul>
     </div>
     <div id="footer-3" class="col-lg-3 col-md-4">

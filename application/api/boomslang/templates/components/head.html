@@ -263,6 +263,128 @@ body.home section#hero{
 img.bordered{
   
   border: 1px solid rgba(128, 128, 128, 0.08);
+}
+
+.gf_progressbar_wrapper .gf_progressbar::after{
+ 
+  display: none;
+}
+
+.gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage{
+ 
+  background: none;
+  background-color: #d22027;
+  
+  height: 15px;
+}
+
+.gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage > span{
+ 
+  display: none;
+}
+
+section#hero .lazy-filter-overlay{
+  
+  /* Slows down the background image fade on the homepage. */
+  transition: opacity 2.0s !important;
+}
+
+#portfolio-widget .pw-item .pw-images .pw-desktop-image,
+#portfolio-widget .pw-item .pw-images .pw-mobile-image{
+ 
+  /* Slows down the background image fade on the portfolio widget. */
+  transition: opacity 1s !important;
+  transition-delay: 1s !important;
+}
+
+#portfolio-widget{
+ 
+  transition-delay: 1s !important;
+}
+
+.ginput_container.ginput_container_select{
+ 
+  position: initial;
+}
+
+.ginput_container.ginput_container_select::after{
+ 
+  display: none;
+}
+
+@media screen and (max-width: 850px){
+ 
+  /* Fixes strange responsive behaviour of 50% form elements on smaller screens. */
+  body form li.form-control.form-50 {
+	
+    display: block;
+  }
+}
+
+@media screen and (max-width: 641px){
+  
+  /* Makes inputs respond properly on mobile. */
+  body .gform_wrapper form li.gfield input,
+  body .gform_wrapper form li.gfield{
+    	
+    width: 100% !important;
+    max-width: 100% !important; 
+  }
+}
+
+
+/* Forces the body font to use Karla. */
+body{
+ 
+  font-family: 'Karla', sans-serif !important;
+}
+
+/* Makes the header a fixed height. */
+body.page header.page-header{
+ 
+  height: 400px;
+}
+
+/* Removes the label from gform elements that shouldn't have one. */
+.gfield.remove-label label{
+ 
+  display: none !important;
+}
+
+/* Fixes the hero height layout */
+body.home section#hero{
+ 
+    min-height: 700px;
+    height: 85%;
+  	
+    /* Make sure the slants go behind the next section. */
+  	
+}
+
+@media screen and (max-width: 768px){
+ 
+  section#hero{
+   
+    /* min-height: 500px !important; */
+    max-height: 700px !important;
+  }
+  
+  section#hero .slant{
+   
+    height: 50px;
+    transform: skewY(-4deg) translateY(25px) !important;
+  }
+  
+  section#process{
+  
+    padding-top: 75px !important;
+  }
+}
+
+/* Special class for images that adds a simple subtle border. */
+img.bordered{
+  
+  border: 1px solid rgba(128, 128, 128, 0.08);
 }</style>
 
 

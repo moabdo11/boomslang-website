@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-US">
+  {% include "components/head.html" %}
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-6">
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="/" aria-label="Navigate to Homepage"><img src="{% static "assets/boomslang-logo.svg" %}"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon lazy-bg" data-img-src="data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-primary">
+        <a href="#" id="nav-close" class="kbs-close"></a>
+        <ul id="menu-primary" class="navbar-nav ml-auto"><li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-59"><a href="/" aria-current="page">Home</a></li>
+        <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">About</a>
+          <ul class="sub-menu">
+            <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
+            <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="/services/">Our Services</a></li>
+            <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
+          </ul>
+       </li>
+        <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+
+  <header class="jumbotron page-header " data-img-src="" data-speed="1.2" style="background-image: linear-gradient( 135deg, rgba(221, 221, 210, 1.0), rgba(210, 32, 39, 1.0));">
+    <div class="lazy-filter-overlay"></div>
+      <div class="container theme-light full">
+        <div class="row align-items-center full">
+          <div class="col-12 readability-normalize">
+            <h1 aria-role="title">We want to hear from you.</h1>
+            <p class="opaque">Whether you have a question,  are ready to become a client, or just want to say hi&hellip;we're all ears.</p>
+          </div>
+        </div>
+      </div>
+        <div class="slant slant-left" aria-hidden="true"></div>
+  </header>
+        
+  <section id="page-content">
+    <div class="container theme-dark full">
+      <nav class="archive-filter context-switcher">
+        <p>How do you want to do this?</p>
+        <ul aria-label="Page View Options">
+          <li class="selected"><a href="#" aria-label="Page: Message Me" data-target="message-me">Fill out form</a></li>
+          <li class=""><a href="#" aria-label="Page: Schedule A Consult" data-target="consult">Schedule A Consultation</a></li>
+          <li class=""><a href="#" aria-label="Page: Email/Call Me" data-target="simple">Email/Call Us</a></li>
+        </ul>
+      </nav>
+      <div class="row switcher-content active" data-name="message-me">
+        <div class="col-lg-8">
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mt-4 wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom01" placeholder="Your name" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-user" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class= "col-md-4 mb-3 class wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
+                      <input type="text" class="form-control input100" id="validationCustom02"  required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-envelope" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
+                      <input type="tel" class="form-control input100" id="form_phone" placeholder="(617)-866-7777" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-phone" aria-hidden="true"></i>
+						          </span>
+                        
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                    
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="col-md-4  wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom03" placeholder="Current City" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-city" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <select class="custom-select input100 " id="validationCustom04" required>
+                        <option selected disabled value="">STATE</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <input type="text" class="form-control input100" placeholder="Zip code" id="validationCustom05" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-city" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                  </div>
+                <div class="form-row">
+                  <div class="col-md-6 mt-4 mb-3 wrap-input100">
+                      <div class="form-group">
+                          <label for="form_need">Please specify a subject *</label>
+                          <select id="form_need" name="need" class="form-control input100" required="required" data-error="Please specify your need.">
+                              <option value=""></option>
+                              <option value="Request quotation">Request quotation</option>
+                              <option value="Request order status">Request order status</option>
+                              <option value="Request copy of an invoice">Request copy of an invoice</option>
+                              <option value="Other">Other</option>
+                          </select>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <div class="form-group wrap-input100 validate-input">
+                          <textarea id="form_message" name="message" class="form-control input100" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <span class="focus-input100"></span>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
+                </div>
+                  
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+      
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 1, '/Users/moabdo-business/Desktop/BOOMSLANG/assets/spinner.gif' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, '/Users/moabdo-business/Desktop/BOOMSLANG/assets/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );</script><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {gf_global["number_formats"][1] = {"1":{"price":false,"value":false},"3":{"price":false,"value":false},"4":{"price":false,"value":false},"6":{"price":false,"value":false},"7":{"price":false,"value":false},"11":{"price":false,"value":false},"8":{"price":false,"value":false},"9":{"price":false,"value":false},"12":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][1] = { logic: { 7: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"6","operator":"is","value":"I need a website."}]},"nextButton":null,"section":null},11: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"6","operator":"is","value":"I need a website."}]},"nextButton":null,"section":null} }, dependents: { 7: [7],11: [11] }, animation: 0, defaults: [], fields: {"1":[],"3":[],"4":[],"6":[7,11],"7":[],"11":[],"8":[],"9":[],"12":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gf_apply_rules(1, [7,11], true);jQuery('#gform_wrapper_1').show();jQuery(document).trigger('gform_post_conditional_logic', [1, null, true]);} );} if(typeof Placeholders != 'undefined'){
+                                Placeholders.enable();
+                            }jQuery('#input_1_4').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script>
+          </div>
+        </div>
+        <div class="row switcher-content " data-name="consult">
+          <div class="col-lg-12">
+            <p></p>
+            <div class="calendly-inline-widget" style="min-width: 320px; height: 675px;" data-url="https://calendly.com/moabdo1212"></div>
+            <p><script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script><br /></p>
+        </div>
+        </div>
+        <div class="row switcher-content " data-name="simple">
+        <div class="col-lg-8">
+        <p>We&#8217;re a big fan of simplicity as well. If you&#8217;d prefer to just email me or give us a call, We&#8217;ve got you covered…</p>
+        <p></p>
+        <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#dbb6baa9b89bb0b2b7b4b9a2afbea8afaebfb2b4a8f5b4a9bc"><span class="__cf_email__" data-cfemail="6508041706250e0c090a071c1100161110010c0a164b0a1702">[email&#160;protected]</span></a></p>
+        <p><strong>Office Phone:</strong> <a href="tel:+1(617)866-7777">+1(617) 866-7777</a></p>
+        <p>Looking forward to hearing from you!</p>
+        </div>
+        </div>
+        </div>
+        </section>
+        
+        
+        <div id="contact-widget">
+        <div class="cw-container">
+        <a href="#" class="cw-toggler cw-item" aria-label="Open Contact Options"><span aria-hidden="true" class="callout d-none d-md-block"><i class="fas fa-envelope"></i>Rather just email me?</span><i class="fas fa-comments"></i><div class="kbs-close" aria-label="Close Contact Options"></div></a>
+        <a aria-label="Email" href="/cdn-cgi/l/email-protection#6a070b18092a0103060508131e0f191e1f0e0305194405180d" target="" class="cw-item "><span aria-hidden="true" class="callout">Email me.</span><i class="fas fa-envelope"></i></a>
+        <a aria-label="Phone" href="tel:617-866-7777" target="" class="cw-item "><span aria-hidden="true" class="callout">Call me.</span><i class="fas fa-phone"></i></a>
+        <a aria-label="Appointment" href="" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book me.</span><i class="fas fa-calendar-alt"></i></a>
+        </div>
+        </div>
+        <footer>
+        <div aria-hidden="true" class="footer-separator"></div>
+        <img aria-hidden="true" class="footer-logo lazy" data-img-src="" />
+        <div class="container theme-dark">
+        <div class="row">
+        <div class="col-12 mt-4">
+        <div id="book-me-section">
+        <h3 class="h2"> I'm <span class="accent">available</span> for new projects starting December 2nd.</h3>
+        <p class="opaque">I've been told that I blow expectations out of the water &mdash; I'll try to be more careful with yours, but I can't make any promises. </p>
+        <a href="contact.html" class="btn btn-primary btn-hover">Let's Do This</a>
+        <img class="lazy" data-img-src="/Users/moabdo-business/Desktop/BOOMSLANG/css/IMG_0083.jpeg" alt="A picture of me, smiling.">
+        </div>
+        </div>
+        </div>
+        <nav id="footer-links" class="row">
+        <div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
+        <p>Company</p>
+        <ul>
+        <li><a target="" href="">Our story</a></li><li><a target="" href="/services/">Our services</a></li>
+        </ul>
+        </div>
+        <div id="footer-2" class="col-md-2">
+        <p> </p>
+        <ul>
+        <li><a target="" href="/contact/">Contact</a></li><li><a target="" href="">Partnerships</a></li><li><a target="_blank" href="">LinkedIn</a></li>
+        </ul>
+        </div>
+        <div id="footer-3" class="col-lg-3 col-md-4">
+        <p>Get In Touch</p>
+        <ul>
+        <li><i class="fas fa-phone"></i><a target="" href="tel: +1(617) 866-7777">+1(617) 866-7777</a></li><li><i class="fas fa-envelope"></i><a target="" href="/cdn-cgi/l/email-protection#caeaa7abb8a98aa1a3a6a5a8b3beafb9bebfaea3a5b9e4a5b8ad"><span class="__cf_email__" data-cfemail="a7cac6d5c4e7cccecbc8c5ded3c2d4d3d2c3cec8d489c8d5c0">[email&#160;protected]</span></a></li><li><i class="fas fa-calendar-alt"></i><a target="_blank" href="https://calendly.com/kbs-marc/initial-consultation">Schedule A Consultation</a></li>
+        </ul>
+        </div>
+        </nav>
+        <div id="copyright" class="row">
+        <div class="col-12">
+        <hr />
+        <p class="float-left">&copy; 2019 Boomslang Management, LLC</p> <p class="float-right"><a target="" href="/terms">Terms & Conditions</a>
+        </span></p>
+        </div>
+        </div>
+        </div>
+        </footer>
+        </main>
+        
+        
+        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=1.0'></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js?ver=1.0'></script>
+        <script type='text/javascript' async="async" src='https://fast.wistia.com/assets/external/E-v1.js?ver=1.0'></script>
+        <script type='text/javascript'>
+          /* <![CDATA[ */
+          var myAjax = {"ajaxUrl":"https:\/\/kilobytestudios.org\/wp-admin\/admin-ajax.php"};
+          /* ]]> */
+          </script>
+          {% include "components/javascript.html" %}
+       
+    
+        <script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":true,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script>
+        </body>
+        </html>

@@ -12,48 +12,44 @@
 
     <div class="container">
 
-      <a class="navbar-brand" href="/" aria-label="Navigate to Homepage"><img src=""></a>
+      <a class="navbar-brand" href="#" aria-label="Navigate to Homepage"><img src="{% static "assets/boomslang-logo.svg" %}"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon lazy-bg" data-img-src="data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav-primary">
         <a href="#" id="nav-close" class="kbs-close"></a>
-        <ul id="menu-primary" class="navbar-nav ml-auto">
-          <li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-59"><a href="index.html" aria-current="page">Home</a></li>
-          <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">About</a>
-            <i class="fas fa-caret-down"></i>
-            <ul class="sub-menu">
-              <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
-              <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="/services/">Our Services</a></li>
-              <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-          <li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="#">Blog</a></li>
-          <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="contact.html">Contact</a></li>
+        <ul id="menu-primary" class="navbar-nav ml-auto"><li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-59"><a href="/" aria-current="page">Home</a></li>
+        <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">About</a>
+          <ul class="sub-menu">
+            <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
+            <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="/services/">Our Services</a></li>
+            <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
+          </ul>
+       </li>
+        <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="/contact/">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
   <main id="main" role="main">
 
     <section id="hero" class="jumbotron accent-bg lazy-bg-with-filter" data-img-src="https://images.unsplash.com/photo-1458086294493-3a5a041289ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
 
-
     <div class="lazy-filter-overlay"></div>
 
-<div class="container theme-light full">
-<div class="row align-items-center full">
-<div class="col-xl-7 col-lg-8 col-md-10">
-<h1>Property Management by Property Investment Experts.</h1>
-<p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
-<div id="homepage-cta-button"><a href="contact.html" class="btn btn-trans btn-hover">Get In Touch</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
-</div>
-<a href="/portfolio" class="btn btn-secondary d-md-none"><i class="far fa-book"></i>See Our Work</a>
-</div>
-</div>
-</div>
+    <div class="container theme-light full">
+      <div class="row align-items-center full">
+        <div class="col-xl-7 col-lg-8 col-md-10">
+          <h1>Property Management by Property Investment Experts.</h1>
+          <p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
+          <div id="homepage-cta-button"><a href="/contact/" class="btn btn-trans btn-hover">Get In Touch</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
+          </div>
+          <a href="/services/" class="btn btn-secondary d-md-none"><i class="fas fa-external-link-alt"></i>learn more</a>
+        </div>
+      </div>
+    </div>
 <div class="slant slant-left slant-large" aria-hidden="true"></div>
 </section>
 
@@ -72,10 +68,10 @@
               <h3>Investment Consulting</h3>
               <p class="opaque">Want to invest in real estate rental properties, but not sure where to start? — As a full service group, Boomslang does extensive research so you know where to buy, what to spend, and what renovations are required. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Investment</a></li><li><a href="">Landing Page</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                <a href="http://boomslanggroup/services.html#anchor-name" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -86,10 +82,10 @@
               <h3>Property Management</h3>
               <p class="opaque"> Hiring the right property management company can be a pain, we've been there ourselves. Property Management isn't just "fixing toilets and collecting rent", we practice PM as assett management and investment enhancement. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Case Studies</a></li><li><a href="">Landing Page</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -100,10 +96,10 @@
               <h3>Construction Management</h3>
               <p class="opaque">Whether a project involves renovation or is a ground up construciton, it's time you stopped letting construction projects scare you. Key relationships, creative solutions, and transparency are the vital components that breed exceptional construction projects.</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Construction Only</a></li><li><a href="">Construction</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
                </div>
             </div>
           </div>
@@ -114,10 +110,10 @@
               <h3>Underwriting</h3>
               <p class="opaque">We examine, identify, measure, and highlight investment risks for all real estate transactions. No catastrophic surprises and you'll have all the information you need so you can make the best investment decision possible.</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Underwriting</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -128,10 +124,10 @@
               <h3>Selecting & Repositioning Property</h3>
               <p class="opaque">Don't pull the selling trigger just yet. Let our experts show you how your property would receive a significant boost in value from asset repositioning instead of offloading and starting from the ground up again. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Custom Site Build</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -142,10 +138,10 @@
               <h3>Maintenance</h3>
               <p class="opaque">Is the rock climbing community ready for my upcoming mobile application? Find out as we take a deep dive into product validation!</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Maintenance</a></li><li><a href="">Mobile App</a></li><li><a href="">Maintenance</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -167,7 +163,8 @@
 
       <div class="col-lg-4">
         <div class="process-item active" data-target="discovery">
-            <span class="kbs-icon active" aria-hidden="true"><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
+
+          <span class="kbs-icon active" aria-hidden="true"><i class="fas fa-home"></i></span>
           <h3>Property Management</h3>
           <p class="opaque">A successful rental property requires a lot of time and effort. With over 20 years experience managing and investing in real estate, let our experience do all the heavy lifting for you.</p>
         </div>
@@ -177,7 +174,7 @@
           <p class="opaque">Purchase property in a trendy area then sit back and watch your money grow...right? Wrong. Successful investing requires thorough analysis and understanding so you can make make the right decisions based on data that matters and not hunches. </p>
         </div>
         <div class="process-item " data-target="development">
-          <span class="kbs-icon " aria-hidden="true"><i class="fas fa-code"></i></span>
+          <span class="kbs-icon " aria-hidden="true"><i class="fas fa-sign"></i></span>
           <h3>Sales & Brokerage </h3>
           <p class="opaque">Buying or Selling? If you're on the buying side you'll receive new and exclusive listings tailored for you. If you're on the selling side our vast network instantly gets your listings in front of qualified buyers.</p>
         </div>
@@ -186,19 +183,18 @@
 
       <div class="col-7 offset-1 d-none d-lg-block" style="position: relative;">
         <div id="discovery" class="illustration active">
-          <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
-                <span><img src="{% static "assets/white_boomslang.svg" %}" width="35" height="35"/></span>
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
             </div>
         </div>
         <div id="design" class="illustration ">
-          <script src="https://fast.wistia.com/embed/medias/09dxnh9js5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_09dxnh9js5 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/09dxnh9js5/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
+
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
               <span><i class="fas fa-flask"></i></span>
               <span><i class="fas fa-flask"></i></span>
               <span><i class="fas fa-flask"></i></span>
@@ -208,14 +204,14 @@
             </div>
         </div>
         <div id="development" class="illustration ">
-          <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
+
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
             </div>
         </div>
       </div>
@@ -229,31 +225,18 @@
 </section>
 
 
+<!-- TESTIMONIALS -->
+
+
 <section id="testimonials">
   <div class="slant slant-left" aria-hidden="true"></div>
   <div class="container theme-dark">
     <div class="row">
       <div class="col-12">
-        <p class="opaque">Past Client Testimonials…</p>
+        <p class="opaque">Client Testimonials…</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
-        <article class="testimonial-item archive-item">
-          <p>[Michael] has been an absolute pleasure to work with: professional, disciplined and knowledgeable. Boomslang appreciates that the quality of the execution depends on the attention invested in pre-project planning. They became fully immersed in our property, they were never late for any meetings, responded rapidly to requests and were swift when required.
-            [...] Weeks after we started working with them, when unexpected problems surfaced, Boomslang always found time to support us. If one was able to score someone 20 out of 10 I would do so. It has been an absolute pleasure working with Boomslang and I would recommend them without any hesitation.</p>
-          <div class="testimonial-bottom-content">
-            <div class="testimonial-image-container">
-              <div class="testimonial-outline"></div>
-              <div class="testimonial-image lazy-bg" data-img-src=""></div>
-            </div>
-            <div class="testimonial-text">
-              <h4 class="h3">Alec Hogg</h4>
-              <a class="opaque-strong" href="https://www.biznews.com/" target="_blank" rel="noopener" aria-label="Visit BizNews">BizNews</a>
-            </div>
-          </div>
-        </article>
-      </div>
       <div class="col-lg-6">
         <article class="testimonial-item archive-item">
           <p>Boomslang did amazing things with our property. Michael and Andrea are extremely knowledgeable and provide world class insight and focus on the issues we wanted to address. I can't say enough good things about their process and results.</p>
@@ -263,8 +246,8 @@
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">David Glass</h4>
-              <a class="opaque-strong" href="http://dardensdelights.com" target="_blank" rel="noopener" aria-label="Visit Darden's Delights">Darden's Delights</a>
+              <h4 class="h3">Mo Abdo</h4>
+              <a class="opaque-strong" href="#" target="_blank" rel="noopener" aria-label="Visit Darden's Delights">MoMedia LTD</a>
             </div>
           </div>
         </article>
@@ -278,8 +261,8 @@
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">Adam Herbert</h4>
-              <p class="opaque-strong">Shelley Darlington Fitness</p>
+              <h4 class="h3">Mo Abdo</h4>
+              <p class="opaque-strong">MoMedia LTD</p>
             </div>
           </div>
         </article>
@@ -293,132 +276,266 @@
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">Ali Mirza</h4>
-              <a class="opaque-strong" href="http://rosegardenconsulting.com" target="_blank" rel="noopener" aria-label="Visit Rose Garden Consulting">Rose Garden Consulting</a>
+              <h4 class="h3">Mo Abdo</h4>
+              <a class="opaque-strong" href="#"  rel="noopener" aria-label="Visit Rose Garden Consulting">MoMedia LTD</a>
             </div>
           </div>
         </article>
       </div>
-<div class="col-lg-6">
-<article class="testimonial-item archive-item">
-<p>Andrea is the consummate professional. Extremely organized in thought and action. She helped me develop an actionable plan for my property. I'm very pleased with the results so far and know that I can call on Andrea for support. Highly recommended!!</p>
-<div class="testimonial-bottom-content">
-<div class="testimonial-image-container">
-<div class="testimonial-outline"></div>
-<div class="testimonial-image lazy-bg" data-img-src=""></div>
+      <div class="col-lg-6">
+        <article class="testimonial-item archive-item">
+          <p>Andrea is the consummate professional. Extremely organized in thought and action. She helped me develop an actionable plan for my property. I'm very pleased with the results so far and know that I can call on Andrea for support. Highly recommended!!</p>
+          <div class="testimonial-bottom-content">
+            <div class="testimonial-image-container">
+              <div class="testimonial-outline"></div>
+              <div class="testimonial-image lazy-bg" data-img-src=""></div>
+            </div>
+             <div class="testimonial-text">
+               <h4 class="h3">Mo Abdo</h4>
+               <p class="opaque-strong">MoMedia LTD</p>
+            </div>
+          </div>
+        </article>
+      </div>
 
-</div>
-<div class="testimonial-text">
-<h4 class="h3">Randall Traywick</h4>
-<p class="opaque-strong">Traywick Properties, LLC.</p>
-</div>
-</div>
-</article>
-</div>
-<div class="col-lg-6">
-<article class="testimonial-item archive-item">
-<p>Andrea was thoughtful, well spoken and considerate in listening to our challenge and offering a potential solution to moving forward. I would highly recommend Boomslang to anyone needing assistance with their property.</p>
-<div class="testimonial-bottom-content">
-<div class="testimonial-text">
-<h4 class="h3">Jake Lester</h4>
-<p class="opaque-strong">Aspire Marketing Systems</p>
-</div>
-</div>
-</article>
-</div>
-<div class="col-lg-6">
-<article class="testimonial-item archive-item">
-<p>Michael is friendly and positive. His work is outstanding and he always goes above and beyond - I would recommend Boomslang to anyone.</p>
-<div class="testimonial-bottom-content">
-<div class="testimonial-image-container">
-<div class="testimonial-outline"></div>
-<div class="testimonial-image lazy-bg" data-img-src=""></div>
 
-</div>
-<div class="testimonial-text">
-<h4 class="h3">Johanna White</h4>
-<p class="opaque-strong">Design by Jo</p>
-</div>
-</div>
-</article>
-</div>
-<div class="col-lg-6">
-<article class="testimonial-item archive-item">
-<p>Boomslang is incredibly thorough and thoughtful with a carefully crafted process for getting results.</p>
-<div class="testimonial-bottom-content">
-<div class="testimonial-text">
-<h4 class="h3">Megan Lanouette</h4>
-<p class="opaque-strong">Cooperative Systems</p>
-</div>
-</div>
-</article>
-</div>
 </div>
 </div>
 </section>
 
-<div id="contact-widget">
-<div class="cw-container">
-<a href="#" class="cw-toggler cw-item" aria-label="Open Contact Options"><span aria-hidden="true" class="callout d-none d-md-block"><i class="fas fa-envelope"></i>Rather just email me?</span><i class="fas fa-comments"></i><div class="kbs-close" aria-label="Close Contact Options"></div></a>
-<a aria-label="Email" href="/cdn-cgi/l/email-protection#fa979b8899ba9193969598838e9f898e8f9e939589d495889d" target="" class="cw-item "><span aria-hidden="true" class="callout">Email us.</span><i class="fas fa-envelope"></i></a>
-<a aria-label="Phone" href="tel:617-866-7777" target="" class="cw-item "><span aria-hidden="true" class="callout">Call us.</span><i class="fas fa-phone"></i></a>
-<a aria-label="Appointment" href="https://calendly.com/moabdo1212/" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book consultation.</span><i class="fas fa-calendar-alt"></i></a>
-</div>
-</div>
-<footer>
-<div aria-hidden="true" class="footer-separator"></div>
-<img aria-hidden="true" class="footer-logo lazy" data-img-src="" />
-<div class="container theme-dark">
-<div class="row">
-<div class="col-12">
-<div id="book-me-section">
-<h3 class="h2"> We're <span class="accent">currently</span> accepting new clients.</h3>
-<p class="opaque">We've been told that we blow expectations out of the water &mdash; We'll try to be more careful with yours, but we can't make any promises. </p>
-<a href="contact.html" class="btn btn-primary btn-hover">Let's Do This</a>
-<img class="lazy" data-img-src="{% static "css/IMG_0083.jpeg" %}" alt="A picture of Mo, smiling.">
-</div>
-</div>
-</div>
-<nav id="footer-links" class="row">
-<div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
-<p>Company</p>
-<ul>
-<li><a target="" href="">Story</a></li><li><a target="" href="/services/">Services</a></li><li><a target="" href="/testimonials">Testimonials</a></li>
-</ul>
-</div>
-<div id="footer-2" class="col-md-2">
-<p> </p>
-<ul>
-<li><a target="" href="contact.htmls">Contact</a></li><li><a target="" href="https://boomslang.com/partnerships">Partnerships</a></li><li><a target="_blank" href="https://www.reddit.com/user/squagem">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
-</ul>
-</div>
-<div id="footer-3" class="col-lg-3 col-md-4">
-<p>Get In Touch</p>
-<ul>
-<li><i class="fas fa-phone"></i><a target="" href="tel: +1(617) 866-7777">+1(617) 866-7777</a></li><li><i class="fas fa-envelope"></i><a target="" href="/cdn-cgi/l/email-protection#b696dbd7c4d5f6dddfdad9d4cfc2d3c5c2c3d2dfd9c598d9c4d1"><span class="__cf_email__" data-cfemail="88e5e9faebc8e3e1e4e7eaf1fcedfbfcfdece1e7fba6e7faef">[email&#160;protected]</span></a></li><li><i class="fas fa-calendar-alt"></i><a target="_blank" href="https://calendly.com/kbs-marc/initial-consultation">Schedule A Consultation</a></li>
-</ul>
-</div>
-</nav>
-<div id="copyright" class="row">
-<div class="col-12">
-<hr />
-<p class="float-left">&copy; 2019 Boomslang Property Management, LLC</p> <p class="float-right"><a target="" href="/terms">Terms & Conditions</a>
-</span></p>
-</div>
-</div>
-</div>
+    <div id="contact-widget">
+      <div class="cw-container">
+        <a href="#" class="cw-toggler cw-item" aria-label="Open Contact Options"><span aria-hidden="true" class="callout d-none d-md-block"><i class="fas fa-envelope"></i>Rather just email me?</span><i class="fas fa-comments"></i><div class="kbs-close" aria-label="Close Contact Options"></div></a>
+        <a aria-label="Email" href="" target="" class="cw-item "><span aria-hidden="true" class="callout">Email us.</span><i class="fas fa-envelope"></i></a>
+        <a aria-label="Phone" href="tel:617-866-7777" target="" class="cw-item "><span aria-hidden="true" class="callout">Call us.</span><i class="fas fa-phone"></i></a>
+        <a aria-label="Appointment" href="https://calendly.com/moabdo1212/" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book consultation.</span><i class="fas fa-calendar-alt"></i></a>
+      </div>
+    </div>
+
+<!-- FOOTER -->
+
+  <footer>
+      <div aria-hidden="true" class="footer-separator"></div>
+      <img aria-hidden="true" class="footer-logo lazy" data-img-src="" />
+      <div class="container theme-dark">
+        <div class="row">
+          <div class="col-12">
+            <div id="book-me-section">
+              <h3 class="h2"> We're <span class="accent">currently</span> accepting new clients.</h3>
+              <p class="opaque">We've been told that we blow expectations out of the water &mdash; We'll try to be more careful with yours, but we can't make any promises. </p>
+              <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mt-4 wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom01" placeholder="full name" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-user" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class= "col-md-4 mb-3 class wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
+                      <input type="text" class="form-control input100" placeholder="your email" id="validationCustom02"  required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-envelope" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
+                      <input type="tel" class="form-control input100" id="form_phone" placeholder="(xxx)-xxx-xxxx" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-phone" aria-hidden="true"></i>
+						          </span>
+                        
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                    
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="col-md-4  wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom03" placeholder="your city" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-city" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <select class="custom-select input100 " id="validationCustom04" required>
+                        <option selected disabled value="">STATE</option>
+                        <option>ALABAMA</option>
+                        <option>ALASKA</option>
+                        <option>ARIZONA</option>
+                        <option>ARKANSAS</option>
+                        <option>CALIFORNIA</option>
+                        <option>COLORADO</option>
+                        <option>CONNECTICUT</option>
+                        <option>DELAWARE</option>
+                        <option>FLORIDA</option>
+                        <option>GEORGIA</option>
+                        <option>HAWAII</option>
+                        <option>IDAHO</option>
+                        <option>ILLINOIS</option>
+                        <option>INDIANA</option>
+                        <option>IOWA</option>
+                        <option>KANSAS</option>
+                        <option>KENTUCKY</option>
+                        <option>LOUISIANA</option>
+                        <option>MAINE</option>
+                        <option>MASSACHUSETTS</option>
+                        <option>MICHIGAN</option>
+                        <option>MINNESOTA</option>
+                        <option>MISSISSIPPI</option>
+                        <option>MISSOURI</option>
+                        <option>MONTANA</option>
+                        <option>NEBRASKA</option>
+                        <option>NEVADA</option>
+                        <option>NEW HAMPSHIRE</option>
+                        <option>NEW JERSEY</option>
+                        <option>NEW MEXICO</option>
+                        <option>NEW YORK</option>
+                        <option>NORTH CAROLINA</option>
+                        <option>NORTH DAKOTA</option>
+                        <option>OHIO</option>
+                        <option>OKLAHOMA</option>
+                        <option>OREGON</option>
+                        <option>PENNSYLVANIA</option>
+                        <option>RHODE ISLAND</option>
+                        <option>SOUTH CAROLINA</option>
+                        <option>SOUTH DAKOTA</option>
+                        <option>TENNESSEE</option>
+                        <option>TEXAS</option>
+                        <option>UTAH</option>
+                        <option>VERMONT</option>
+                        <option>VIRGINIA</option>
+                        <option>WASHINGTON</option>
+                        <option>WEST VIRGINIA</option>
+                        <option>WISCONSIN</option>
+                        <option>WYOMING</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <input type="text" class="form-control input100" placeholder="zip code" id="validationCustom05" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-envelope-open" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                  </div>
+                <div class="form-row">
+                  <div class="col-md-6 mt-4 mb-3 wrap-input100">
+                      <div class="form-group">
+                          <label for="form_need">subject *</label>
+                          <select id="form_need" name="need" class="form-control input100" required="required" data-error="Please specify your need.">
+                              <option value=""></option>
+                              <option value="Request quotation">I need a property manager.</option>
+                              <option value="Request order status">I'm looking to buy a property.</option>
+                              <option value="Request copy of an invoice">I'm looking to sell a property.</option>
+                              <option value="Other">Other</option>
+                          </select>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <div class="form-group wrap-input100 validate-input">
+                          <textarea id="form_message" name="message" class="form-control input100" placeholder="A beautiful partnership is just one message away..." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <span class="focus-input100"></span>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
+                </div>
+                  
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+                
+                <!-- <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script> -->
+              <img class="lazy" data-img-src="/Users/moabdo-business/Desktop/BOOMSLANG/css/IMG_0083.jpeg" alt="A picture of Mo, smiling.">
+            </div>
+          </div>
+        </div>
+
+      <nav id="footer-links" class="row">
+        <div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
+          <p>Company</p>
+          <ul>
+            <li><a target="" href="">Story</a></li><li><a target="" href="/services/">Services</a></li><li><a target="" href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div id="footer-2" class="col-md-2">
+          <p> </p>
+          <ul>
+            <li><a target="" href="/contact/">Contact</a></li><li><a target="" href="#">Partnerships</a></li><li><a target="_blank" href="#">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div id="footer-3" class="col-lg-3 col-md-4">
+          <p>Get In Touch</p>
+          <ul>
+            <li><i class="fas fa-phone"></i><a target="" href="tel: +1(617) 866-7777">+1(617) 866-7777</a></li><li><i class="fas fa-envelope"></i><a target="" href="/cdn-cgi/l/email-protection#b696dbd7c4d5f6dddfdad9d4cfc2d3c5c2c3d2dfd9c598d9c4d1"><span class="__cf_email__" data-cfemail="88e5e9faebc8e3e1e4e7eaf1fcedfbfcfdece1e7fba6e7faef">[email&#160;protected]</span></a></li><li><i class="fas fa-calendar-alt"></i><a target="_blank" href="">Schedule A Consultation</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="copyright" class="row">
+        <div class="col-12">
+          <hr />
+          <p class="float-left">&copy; 2019 Boomslang Property Management, LLC</p> <p class="float-right"><a target="" href="#">Terms & Conditions</a>
+          </span></p>
+        </div>
+      </div>
+    </div>
  </footer>
 </main>
+  
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=1.0'></script>
+
+<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=1.0'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js?ver=1.0'></script>
 <script type='text/javascript' async="async" src='https://fast.wistia.com/assets/external/E-v1.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-
+// var myAjax = {"ajaxUrl":"https:\/\/\/\/admin-ajax.php"};
 /* ]]> */
 </script>
-    <script type='text/javascript' src="{% static "js/main.js" %}"></script>
-    <script type='text/javascript' src="{% static "js/EnlighterJS.min.js" %}"></script>
+  {% include "components/javascript.html" %}
 <script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":true,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script>
 </body>
