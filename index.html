@@ -264,33 +264,6 @@ img.bordered{
 }</style>
 
 
-<script type="text/javascript">
-jQuery(document).ready(function( $ ){
-    
-    function qs(key) {
-      
-      key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
-      var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
-      return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-   }
-  	
-  	var surveyComplete = qs('survey_complete');
-  	// console.log(surveyComplete);
-  
-  	if(surveyComplete != null){
-  
-      if(surveyComplete.match('yes')){
-
-          // console.log('Toggling now.');
-          $('#discovery-process-survey-thank-you').addClass('active');
-          $('#discovery-survey-step').addClass('done');
-          $('#discovery-process-heads-up').addClass('dismiss');
-          $('#dismiss-on-survey-complete').addClass('dismiss');
-      }
-  }
-});
-
-</script>
 
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 </head>
@@ -300,27 +273,26 @@ jQuery(document).ready(function( $ ){
 
     <div class="container">
 
-      <a class="navbar-brand" href="/" aria-label="Navigate to Homepage"><img src=""></a>
+      <a class="navbar-brand" href="#" aria-label="Navigate to Homepage"><img src="assets/boomslang-logo.svg" ></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon lazy-bg" data-img-src="data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav-primary">
-        <a href="#" id="nav-close" class="kbs-close fa-ul"></a>
-        <ul id="menu-primary" class="navbar-nav ml-auto">
-          <li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-59"><a href="index.html" aria-current="page">Home</a></li>
-          <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">About</a> 
-            <ul class="sub-menu">   
-              <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
-              <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="services.html">Our Services</a></li>
-              <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-          <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="contact.html">Contact</a></li>
+        <a href="#" id="nav-close" class="kbs-close"></a>
+        <ul id="menu-primary" class="navbar-nav ml-auto"><li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-59"><a href="index.html" aria-current="page">Home</a></li>
+        <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">About</a>
+          <ul class="sub-menu">
+            <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
+            <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="services.html">Our Services</a></li>
+            <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
+          </ul>
+       </li>
+        <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
   <main id="main" role="main">
 
@@ -328,17 +300,17 @@ jQuery(document).ready(function( $ ){
 
     <div class="lazy-filter-overlay"></div>
 
-<div class="container theme-light full">
-<div class="row align-items-center full">
-<div class="col-xl-7 col-lg-8 col-md-10">
-<h1>Property Management by Property Investment Experts.</h1>
-<p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
-<div id="homepage-cta-button"><a href="contact.html" class="btn btn-trans btn-hover">Get In Touch</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
-</div>
-<a href="/portfolio" class="btn btn-secondary d-md-none"><i class="far fa-book"></i>See Our Work</a>
-</div>
-</div>
-</div>
+    <div class="container theme-light full">
+      <div class="row align-items-center full">
+        <div class="col-xl-7 col-lg-8 col-md-10">
+          <h1>Property Management by Property Investment Experts.</h1>
+          <p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
+          <div id="homepage-cta-button"><a href="contact.html" class="btn btn-trans btn-hover">Get In Touch</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
+          </div>
+          <a href="services.html" class="btn btn-secondary d-md-none"><i class="fas fa-external-link-alt"></i>learn more</a>
+        </div>
+      </div>
+    </div>
 <div class="slant slant-left slant-large" aria-hidden="true"></div>
 </section>
 
@@ -357,10 +329,10 @@ jQuery(document).ready(function( $ ){
               <h3>Investment Consulting</h3>
               <p class="opaque">Want to invest in real estate rental properties, but not sure where to start? — As a full service group, Boomslang does extensive research so you know where to buy, what to spend, and what renovations are required. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Investment</a></li><li><a href="">Landing Page</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                <a href="http://boomslanggroup/services.html#anchor-name" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -371,10 +343,10 @@ jQuery(document).ready(function( $ ){
               <h3>Property Management</h3>
               <p class="opaque"> Hiring the right property management company can be a pain, we've been there ourselves. Property Management isn't just "fixing toilets and collecting rent", we practice PM as assett management and investment enhancement. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Case Studies</a></li><li><a href="">Landing Page</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -385,10 +357,10 @@ jQuery(document).ready(function( $ ){
               <h3>Construction Management</h3>
               <p class="opaque">Whether a project involves renovation or is a ground up construciton, it's time you stopped letting construction projects scare you. Key relationships, creative solutions, and transparency are the vital components that breed exceptional construction projects.</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Construction Only</a></li><li><a href="">Construction</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
                </div>
             </div>
           </div>
@@ -399,10 +371,10 @@ jQuery(document).ready(function( $ ){
               <h3>Underwriting</h3>
               <p class="opaque">We examine, identify, measure, and highlight investment risks for all real estate transactions. No catastrophic surprises and you'll have all the information you need so you can make the best investment decision possible.</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Underwriting</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -413,10 +385,10 @@ jQuery(document).ready(function( $ ){
               <h3>Selecting & Repositioning Property</h3>
               <p class="opaque">Don't pull the selling trigger just yet. Let our experts show you how your property would receive a significant boost in value from asset repositioning instead of offloading and starting from the ground up again. </p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Custom Site Build</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -427,10 +399,10 @@ jQuery(document).ready(function( $ ){
               <h3>Maintenance</h3>
               <p class="opaque">Is the rock climbing community ready for my upcoming mobile application? Find out as we take a deep dive into product validation!</p>
               <ul class="tags" aria-label="tags">
-                <li><a href="">Maintenance</a></li><li><a href="">Mobile App</a></li><li><a href="">Maintenance</a></li>
+                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
               <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link"></i>Learn More</a>
+                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
               </div>
             </div>
           </div>
@@ -452,7 +424,7 @@ jQuery(document).ready(function( $ ){
 
       <div class="col-lg-4">
         <div class="process-item active" data-target="discovery">
-          <span class="kbs-icon active" aria-hidden="true"><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
+          <span class="kbs-icon active" aria-hidden="true"><i class="fas fa-home"></i></span>
           <h3>Property Management</h3>
           <p class="opaque">A successful rental property requires a lot of time and effort. With over 20 years experience managing and investing in real estate, let our experience do all the heavy lifting for you.</p>
         </div>
@@ -462,7 +434,7 @@ jQuery(document).ready(function( $ ){
           <p class="opaque">Purchase property in a trendy area then sit back and watch your money grow...right? Wrong. Successful investing requires thorough analysis and understanding so you can make make the right decisions based on data that matters and not hunches. </p>
         </div>
         <div class="process-item " data-target="development">
-          <span class="kbs-icon " aria-hidden="true"><i class="fas fa-code"></i></span>
+          <span class="kbs-icon " aria-hidden="true"><i class="fas fa-sign"></i></span>
           <h3>Sales & Brokerage </h3>
           <p class="opaque">Buying or Selling? If you're on the buying side you'll receive new and exclusive listings tailored for you. If you're on the selling side our vast network instantly gets your listings in front of qualified buyers.</p>
         </div>
@@ -471,19 +443,19 @@ jQuery(document).ready(function( $ ){
 
       <div class="col-7 offset-1 d-none d-lg-block" style="position: relative;">
         <div id="discovery" class="illustration active">
-          <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
-              <span><img src="/Users/moabdo-business/Desktop/BOOMSLANG/assets/white_boomslang.svg" width="35" height="35"/></span>
+    
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
+              <span><i class="fas fa-home"></i></span>
             </div>
         </div>
         <div id="design" class="illustration ">
-          <script src="https://fast.wistia.com/embed/medias/09dxnh9js5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_09dxnh9js5 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/09dxnh9js5/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
+
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
               <span><i class="fas fa-flask"></i></span>
               <span><i class="fas fa-flask"></i></span>
               <span><i class="fas fa-flask"></i></span>
@@ -493,14 +465,14 @@ jQuery(document).ready(function( $ ){
             </div>
         </div>
         <div id="development" class="illustration ">
-          <script src="https://fast.wistia.com/embed/medias/em2qy27n8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_em2qy27n8s videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/em2qy27n8s/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-            <div class="icon-mosaic" " aria-hidden="true" tabindex="-1">
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
-              <span><i class="fas fa-code"></i></span>
+
+            <div class="icon-mosaic"  aria-hidden="true" tabindex="-1">
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
+              <span><i class="fas fa-sign"></i></span>
             </div>
         </div>
       </div>
@@ -512,6 +484,9 @@ jQuery(document).ready(function( $ ){
     </div>
   </div>
 </section>
+
+
+<!-- TESTIMONIALS -->
 
 
 <section id="testimonials">
@@ -532,8 +507,8 @@ jQuery(document).ready(function( $ ){
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">David Glass</h4>
-              <a class="opaque-strong" href="http://dardensdelights.com" target="_blank" rel="noopener" aria-label="Visit Darden's Delights">Darden's Delights</a>
+              <h4 class="h3">Mo Abdo</h4>
+              <a class="opaque-strong" href="#" target="_blank" rel="noopener" aria-label="Visit Darden's Delights">MoMedia LTD</a>
             </div>
           </div>
         </article>
@@ -547,8 +522,8 @@ jQuery(document).ready(function( $ ){
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">Adam Herbert</h4>
-              <p class="opaque-strong">Shelley Darlington Fitness</p>
+              <h4 class="h3">Mo Abdo</h4>
+              <p class="opaque-strong">MoMedia LTD</p>
             </div>
           </div>
         </article>
@@ -562,8 +537,8 @@ jQuery(document).ready(function( $ ){
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
             <div class="testimonial-text">
-              <h4 class="h3">Ali Mirza</h4>
-              <a class="opaque-strong" href="http://rosegardenconsulting.com" target="_blank" rel="noopener" aria-label="Visit Rose Garden Consulting">Rose Garden Consulting</a>
+              <h4 class="h3">Mo Abdo</h4>
+              <a class="opaque-strong" href="#"  rel="noopener" aria-label="Visit Rose Garden Consulting">MoMedia LTD</a>
             </div>
           </div>
         </article>
@@ -577,8 +552,8 @@ jQuery(document).ready(function( $ ){
               <div class="testimonial-image lazy-bg" data-img-src=""></div>
             </div>
              <div class="testimonial-text">
-               <h4 class="h3">Randall Traywick</h4>
-               <p class="opaque-strong">Traywick Properties, LLC.</p>
+               <h4 class="h3">Mo Abdo</h4>
+               <p class="opaque-strong">MoMedia LTD</p>
             </div>
           </div>
         </article>
@@ -592,11 +567,14 @@ jQuery(document).ready(function( $ ){
     <div id="contact-widget">
       <div class="cw-container">
         <a href="#" class="cw-toggler cw-item" aria-label="Open Contact Options"><span aria-hidden="true" class="callout d-none d-md-block"><i class="fas fa-envelope"></i>Rather just email me?</span><i class="fas fa-comments"></i><div class="kbs-close" aria-label="Close Contact Options"></div></a>
-        <a aria-label="Email" href="/cdn-cgi/l/email-protection#fa979b8899ba9193969598838e9f898e8f9e939589d495889d" target="" class="cw-item "><span aria-hidden="true" class="callout">Email us.</span><i class="fas fa-envelope"></i></a>
+        <a aria-label="Email" href="" target="" class="cw-item "><span aria-hidden="true" class="callout">Email us.</span><i class="fas fa-envelope"></i></a>
         <a aria-label="Phone" href="tel:617-866-7777" target="" class="cw-item "><span aria-hidden="true" class="callout">Call us.</span><i class="fas fa-phone"></i></a>
         <a aria-label="Appointment" href="https://calendly.com/moabdo1212/" target="_blank" class="cw-item "><span aria-hidden="true" class="callout"><i class="fas fa-external-link"></i>  Book consultation.</span><i class="fas fa-calendar-alt"></i></a>
       </div>
     </div>
+
+<!-- FOOTER -->
+
   <footer>
       <div aria-hidden="true" class="footer-separator"></div>
       <img aria-hidden="true" class="footer-logo lazy" data-img-src="" />
@@ -606,53 +584,189 @@ jQuery(document).ready(function( $ ){
             <div id="book-me-section">
               <h3 class="h2"> We're <span class="accent">currently</span> accepting new clients.</h3>
               <p class="opaque">We've been told that we blow expectations out of the water &mdash; We'll try to be more careful with yours, but we can't make any promises. </p>
-              <div class="col-lg-8">
-                  <div class='gf_browser_chrome gform_wrapper form-primary_wrapper' id='gform_wrapper_1' style='display:none'><a id='gf_1' class='gform_anchor'></a>
-                    <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1' class='form-primary' action='config.php'>
-                      <div class='gform_body'>
-                        <ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'>
-                          <li id='field_1_1' class='gfield form-control gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_1'>Full Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='medium' placeholder='Your Name' aria-required="true" aria-invalid="false" /></div></li>
-                          <li id='field_1_3' class='gfield form-control form-50 first gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_3'>Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'><input name='input_3' id='input_1_3' type='text' value='' class='medium' placeholder='youremail@company.com' aria-required="true" aria-invalid="false" /></div></li>
-                          <li id='field_1_4' class='gfield form-control form-50 field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_4'>Phone</label><div class='ginput_container ginput_container_phone'><input name='input_4' id='input_1_4' type='text' value='' class='medium' placeholder='+1 (617)-866-7777' aria-invalid="false" /></div></li>
-                          <li id='field_1_6' class='gfield form-control form-50 first gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_6'>Subject<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_6' id='input_1_6' class='large gfield_select' aria-required="true" aria-invalid="false"><option value='' selected='selected' class='gf_placeholder'>Select an option...</option><option value='I need a property manager.'>I need a property manager.</option><option value='I have some questions.'>I have some questions.</option><option value='I need something else.'>I need something else.</option><option value='Other'>Other</option></select></div></li>
-                          <li id='field_1_7' class='gfield form-control form-50 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_7'>Total Units<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_7' id='input_1_7' class='large gfield_select' aria-required="true" aria-invalid="false"><option value='' selected='selected' class='gf_placeholder'>Select a unit range...</option><option value='0 - 5'>0 - 5</option><option value='5 - 10'>5 - 10</option><option value='10 - 15'>10 - 15</option><option value='15 - 20'>15 - 20</option><option value='20+'>20+</option></select></div></li>
-                          <li id='field_1_11' class='gfield field_sublabel_below field_description_below gfield_visibility_hidden'><label class='gfield_label'>Engagement Level Notice</label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_11'><li class='gchoice_1_11_1'><input name='input_11.1' type='checkbox' value='I understand that engagements start at $15,000 for new projects, and I am comfortable working with that level of engagement.' id='choice_1_11_1' /><label for='choice_1_11_1' id='label_1_11_1'>I understand that engagements start at $15,000 for new projects, and I am comfortable working with that level of engagement.</label></li></ul></div></li>
-                          <li id='field_1_8' class='gfield form-control gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_8'>What&#039;s Going On?<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_8' id='input_1_8' class='textarea large' placeholder='A beautiful partnership is just a message away...' aria-required="true" aria-invalid="false" rows='10' cols='50'></textarea></div></li><li id='field_1_9' class='gfield remove-label field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_9'></label><div id='input_1_9' class='ginput_container ginput_recaptcha' data-sitekey='6LfxyWYUAAAAAChLx2NTV8q0bskLMpe45rMPw76z' data-theme='light' data-tabindex='0'></div></li><li id='field_1_12' class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_12'>Phone</label><div class='ginput_container'><input name='input_12' id='input_1_12' type='text' value='' /></div><div class='gfield_description'>This field is for validation purposes and should be left unchanged.</div></li>
-                        </ul>
+              <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mt-4 wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom01" placeholder="full name" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-user" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
                       </div>
-                      <div class='gform_footer top_label'> 
-                        <input type="submit" class="btn btn-primary btn-hover" id="gform_submit_button_1" value="Send Message"><span class="submit-callout-text d-none d-md-inline-block"></span> 
-                        <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0' />
-                        <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
-                        <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
-                        <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-                        <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsImVjNzU3ZGRkOGYxMDcxYzAwNGFjMWY4NmY0YWNhMTc4Il0=' />
-                        <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
-                        <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
-                        <input type='hidden' name='gform_field_values' value='' />
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class= "col-md-4 mb-3 class wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
+                      <input type="text" class="form-control input100" placeholder="your email" id="validationCustom02"  required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-envelope" aria-hidden="true"></i>
+						          </span>
+                      <div class="valid-feedback">
+                        Looks good!
                       </div>
-                    </form>
+                    </div>
+                    <div class="col-md-4 mb-3 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
+                      <input type="tel" class="form-control input100" id="form_phone" placeholder="(xxx)-xxx-xxxx" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-phone" aria-hidden="true"></i>
+						          </span>
+                        
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                    
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="col-md-4  wrap-input100">
+                      <input type="text" class="form-control input100" id="validationCustom03" placeholder="your city" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-city" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <select class="custom-select input100 " id="validationCustom04" required>
+                        <option selected disabled value="">STATE</option>
+                        <option>ALABAMA</option>
+                        <option>ALASKA</option>
+                        <option>ARIZONA</option>
+                        <option>ARKANSAS</option>
+                        <option>CALIFORNIA</option>
+                        <option>COLORADO</option>
+                        <option>CONNECTICUT</option>
+                        <option>DELAWARE</option>
+                        <option>FLORIDA</option>
+                        <option>GEORGIA</option>
+                        <option>HAWAII</option>
+                        <option>IDAHO</option>
+                        <option>ILLINOIS</option>
+                        <option>INDIANA</option>
+                        <option>IOWA</option>
+                        <option>KANSAS</option>
+                        <option>KENTUCKY</option>
+                        <option>LOUISIANA</option>
+                        <option>MAINE</option>
+                        <option>MASSACHUSETTS</option>
+                        <option>MICHIGAN</option>
+                        <option>MINNESOTA</option>
+                        <option>MISSISSIPPI</option>
+                        <option>MISSOURI</option>
+                        <option>MONTANA</option>
+                        <option>NEBRASKA</option>
+                        <option>NEVADA</option>
+                        <option>NEW HAMPSHIRE</option>
+                        <option>NEW JERSEY</option>
+                        <option>NEW MEXICO</option>
+                        <option>NEW YORK</option>
+                        <option>NORTH CAROLINA</option>
+                        <option>NORTH DAKOTA</option>
+                        <option>OHIO</option>
+                        <option>OKLAHOMA</option>
+                        <option>OREGON</option>
+                        <option>PENNSYLVANIA</option>
+                        <option>RHODE ISLAND</option>
+                        <option>SOUTH CAROLINA</option>
+                        <option>SOUTH DAKOTA</option>
+                        <option>TENNESSEE</option>
+                        <option>TEXAS</option>
+                        <option>UTAH</option>
+                        <option>VERMONT</option>
+                        <option>VIRGINIA</option>
+                        <option>WASHINGTON</option>
+                        <option>WEST VIRGINIA</option>
+                        <option>WISCONSIN</option>
+                        <option>WYOMING</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-4 wrap-input100">
+                      <input type="text" class="form-control input100" placeholder="zip code" id="validationCustom05" required>
+                      <span class="focus-input100"></span>
+						          <span class="symbol-input100">
+							          <i class="fa fa-envelope-open" aria-hidden="true"></i>
+						          </span>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                  </div>
+                <div class="form-row">
+                  <div class="col-md-6 mt-4 mb-3 wrap-input100">
+                      <div class="form-group">
+                          <label for="form_need">subject *</label>
+                          <select id="form_need" name="need" class="form-control input100" required="required" data-error="Please specify your need.">
+                              <option value=""></option>
+                              <option value="Request quotation">I need a property manager.</option>
+                              <option value="Request order status">I'm looking to buy a property.</option>
+                              <option value="Request copy of an invoice">I'm looking to sell a property.</option>
+                              <option value="Other">Other</option>
+                          </select>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <div class="form-group wrap-input100 validate-input">
+                          <textarea id="form_message" name="message" class="form-control input100" placeholder="A beautiful partnership is just one message away..." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <span class="focus-input100"></span>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a message.
+                      </div>
+                  </div>
                 </div>
-                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
-                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 1, '/Users/moabdo-business/Desktop/BOOMSLANG/assets/spinner.gif' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, '/Users/moabdo-business/Desktop/BOOMSLANG/assets/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );</script><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/kilobytestudios.org\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/kilobytestudios.org\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {gf_global["number_formats"][1] = {"1":{"price":false,"value":false},"3":{"price":false,"value":false},"4":{"price":false,"value":false},"6":{"price":false,"value":false},"7":{"price":false,"value":false},"11":{"price":false,"value":false},"8":{"price":false,"value":false},"9":{"price":false,"value":false},"12":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][1] = { logic: { 7: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"6","operator":"is","value":"I need a website."}]},"nextButton":null,"section":null},11: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"6","operator":"is","value":"I need a website."}]},"nextButton":null,"section":null} }, dependents: { 7: [7],11: [11] }, animation: 0, defaults: [], fields: {"1":[],"3":[],"4":[],"6":[7,11],"7":[],"11":[],"8":[],"9":[],"12":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gf_apply_rules(1, [7,11], true);jQuery('#gform_wrapper_1').show();jQuery(document).trigger('gform_post_conditional_logic', [1, null, true]);} );} if(typeof Placeholders != 'undefined'){
-                                        Placeholders.enable();
-                                    }jQuery('#input_1_4').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script>
-                </div>
+                  
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+                
+                <!-- <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script> -->
               <img class="lazy" data-img-src="/Users/moabdo-business/Desktop/BOOMSLANG/css/IMG_0083.jpeg" alt="A picture of Mo, smiling.">
             </div>
           </div>
         </div>
+
       <nav id="footer-links" class="row">
         <div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
           <p>Company</p>
           <ul>
-            <li><a target="" href="">Story</a></li><li><a target="" href="services.html">Services</a></li><li><a target="" href="/testimonials">Testimonials</a></li>
+            <li><a target="" href="">Story</a></li><li><a target="" href="services.html">Services</a></li><li><a target="" href="#">Testimonials</a></li>
           </ul>
         </div>
         <div id="footer-2" class="col-md-2">
           <p> </p>
           <ul>
-            <li><a target="" href="contact.htmls">Contact</a></li><li><a target="" href="https://boomslang.com/partnerships">Partnerships</a></li><li><a target="_blank" href="https://www.reddit.com/user/squagem">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
+            <li><a target="" href="contact.html">Contact</a></li><li><a target="" href="#">Partnerships</a></li><li><a target="_blank" href="#">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
           </ul>
         </div>
         <div id="footer-3" class="col-lg-3 col-md-4">
@@ -665,7 +779,7 @@ jQuery(document).ready(function( $ ){
       <div id="copyright" class="row">
         <div class="col-12">
           <hr />
-          <p class="float-left">&copy; 2019 Boomslang Property Management, LLC</p> <p class="float-right"><a target="" href="/terms">Terms & Conditions</a>
+          <p class="float-left">&copy; 2019 Boomslang Property Management, LLC</p> <p class="float-right"><a target="" href="#">Terms & Conditions</a>
           </span></p>
         </div>
       </div>
@@ -673,35 +787,20 @@ jQuery(document).ready(function( $ ){
  </footer>
 </main>
   
-<link rel='stylesheet' id='gforms_reset_css-css' href='assets/gravityforms/css/formreset.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_formsmain_css-css' href='assets/gravityforms/css/formsmain.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_ready_class_css-css' href='assets/gravityforms/css/readyclass.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_browsers_css-css' href='assets/gravityforms/css/browsers.min.css' type='text/css' media='all' />
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=1.0'></script>
+
+<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=1.0'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js?ver=1.0'></script>
 <script type='text/javascript' async="async" src='https://fast.wistia.com/assets/external/E-v1.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-
+// var myAjax = {"ajaxUrl":"https:\/\/\/\/admin-ajax.php"};
 /* ]]> */
 </script>
-
-<script type='text/javascript'>
-  /* <![CDATA[ */
-  // var myAjax = {"ajaxUrl":"https:\/\/\/\/admin-ajax.php"};
-  /* ]]> */
-  </script>
-  <script type='text/javascript' src='/Users/moabdo-business/Desktop/BOOMSLANG/js/main.js'></script>
-  <script type='text/javascript' src='https://kilobytestudios.org/wp-content/plugins/enlighter/resources/mootools-core-yc.js?ver=3.8'></script>
-  <script type='text/javascript' src='https://kilobytestudios.org/wp-content/plugins/enlighter/resources/EnlighterJS.min.js?ver=3.8'></script>
-  <script type='text/javascript' src='https://kilobytestudios.org/wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
-  <script type='text/javascript' src='assets/gravityforms/js/jquery.json.min.js'></script>
-  <script type='text/javascript' src='assets/gravityforms/js/gravityforms.min.js'></script>
-  <script type='text/javascript' src='assets/gravityforms/js/conditional_logic.min.js'></script>
-  <script type='text/javascript' src='assets/gravityforms/js/jquery.maskedinput.min.js'></script>
-  <script type='text/javascript' src='assets/gravityforms/js/placeholders.jquery.min.js'></script>
 <script type='text/javascript' src='/Users/moabdo-business/Desktop/BOOMSLANG/js/main.js'></script>
-<script type='text/javascript' src='js/EnlighterJS.min.js'></script>
+<script type='text/javascript' src='assets/enlighter/mootools-core-yc.js'></script>
+<script type='text/javascript' src='assets/enlighter/EnlighterJS.min.js'></script>
+
+
 <script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":true,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script>
 </body>
