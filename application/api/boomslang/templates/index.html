@@ -11,7 +11,6 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
 
     <div class="container">
-
       <a class="navbar-brand" href="#" aria-label="Navigate to Homepage"><img src="{% static "assets/boomslang-logo.svg" %}"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +33,19 @@
 </nav>
 
   <main id="main" role="main">
-
     <section id="hero" class="jumbotron accent-bg lazy-bg-with-filter" data-img-src="https://images.unsplash.com/photo-1458086294493-3a5a041289ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
 
     <div class="lazy-filter-overlay"></div>
 
     <div class="container theme-light full">
       <div class="row align-items-center full">
+
+        {% if message %}
+          {% include "components/messages.html" %}
+        {% else %}
+    
+        {% endif %}
+
         <div class="col-xl-7 col-lg-8 col-md-10">
           <h1>Property Management by Property Investment Experts.</h1>
           <p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
@@ -490,7 +495,7 @@
                   }, false);
                 })();
                 </script> -->
-              <img class="lazy" data-img-src="/Users/moabdo-business/Desktop/BOOMSLANG/css/IMG_0083.jpeg" alt="A picture of Mo, smiling.">
+              <img class="lazy" data-img-src="{% static "css/IMG_0083.jpeg" %}" alt="A picture of Mo, smiling.">
             </div>
           </div>
         </div>
