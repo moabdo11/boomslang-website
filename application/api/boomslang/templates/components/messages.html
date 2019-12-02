@@ -1,0 +1,11 @@
+{% if message.status == 'success' %}
+  <div class="alert alert-success col-sm-10 col-sm-offset-1" role="alert">
+    <a class="close" data-dismiss="alert">x</a>
+      <p style="text-align: center;">{{ message.content }}</p>
+  </div>
+{% else %}
+  <div class="alert alert-danger col-sm-8 col-sm-offset-2" role="alert">
+    <a class="close" data-dismiss="alert">x</a>
+      <p style="text-align: center;">{{ message.content }}</p>
+  </div>
+{% endif %}
