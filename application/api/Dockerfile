@@ -1,6 +1,6 @@
 FROM python:3.7
 
-ADD project /opt/boomslang
+ADD boomslang /opt/boomslang
 ADD bin /opt/bin
 
 RUN pip install -r /opt/boomslang/requirements.txt

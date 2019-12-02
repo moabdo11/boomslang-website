@@ -3,7 +3,7 @@
 # Remove the development settings, migrate the database and configure the admin
 #
 
-rm project/settings/development.py
+rm boomslang/settings/development.py
 
 sleep 2s
 
@@ -19,4 +19,4 @@ echo 'from django.contrib.auth.models import User; \
       | python3 manage.py shell
 
 # Kick off UWSGI
-/usr/local/bin/uwsgi --ini /opt/argos/uwsgi.ini
+/usr/local/bin/uwsgi --ini /opt/boomslang/uwsgi.ini
