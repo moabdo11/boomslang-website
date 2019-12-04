@@ -29,27 +29,14 @@
 <link rel="alternate" type="application/rss+xml" title="Boomslang Management &raquo; Feed" href="https://boomslanggroup.com/feed" />
 <link rel="alternate" type="application/rss+xml" title="Boomslang Management &raquo; Comments Feed" href="https://boomslanggroup.com/comments/feed" />
 
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
+
 <link rel='stylesheet' id='bootstrap-css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css?ver=5.2.4' type='text/css' media='all' />
 <link rel='stylesheet' id='fonts-css' href='https://fonts.googleapis.com/css?family=Karla%3A400%2C700%7CRubik%3A400%2C700&#038;ver=5.2.4' type='text/css' media='all' />
 <link rel='stylesheet' id='boomslang-style-css' href='css/style.css'type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-css' href='fontawesome/css/all.css' type='text/css' media='all' />
 <link rel='stylesheet' id='enlighter-local-css' href='css/Enlighter.css' type='text/css' media='all' />
-<script type='text/javascript' src='js/jquery/jquery.js'></script>
-<script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='assets/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='assets/js/jquery/jquery-migrate.min.js'></script>
 <link rel='shortlink' href='https://boomslanggroup.com/' />
 <link rel="alternate" type="application/json+oembed" href="" />
 <link rel="alternate" type="text/xml+oembed" href="" />
@@ -265,11 +252,97 @@ img.bordered{
 
 
 
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 </head>
 <body class="home page-template page-template-page-home page-template-page-home-php page page-id-6">
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+
+  <nav id="header_v2">
+    <div id="mobile-menu-v2">
+        <div id="mobile-menu-v2-header-container">
+            <div id="mobile-menu-v2-header">
+                <div id="mobile-menu-v2-logo">
+                    <a href="/"><img alt="Boomslang Property Management logo; red and grey on a black background."  src="assets/boomslang-logo.svg" /></a>
+                </div>
+                <div id="mobile-menu-v2-icon" data-img-src="data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E">
+                    
+                </div>
+            </div>
+            <div id="mobile-menu-v2-persistent">
+                <div id="mobile-menu-v2-persistent-phone">
+                    <a href="tel:617-286-2855"><span class="phone"></span> <span class="number">617.286.2855</span></a>
+                </div>
+                <div id="mobile-menu-v2-persistent-cta">
+                    <a href="/try-it-free?APM-CTA=try-it-1" class="cta" id="top_tryit">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-slidein-bg-v2" style="display: none;"></div>
+        <div id="menu-slidein-v2" style="height: 100%;">
+            <ul class="menu-slidein-ul-v2">
+               
+                <li id="mobile_main" class="menu-slidein-item-v2"><a href="/">HOME</a></li>
+              
+                <li class="menu-slidein-item no-bottom-border-v2">
+                    <a id="menu-slidein-phone-v2" href="tel:866-648-1536"><span class="phone"></span> <span class="number">866.648.1536</span></a>
+                </li>
+                <li class="menu-slidein-item no-bottom-border-v2" style="padding-bottom: 30px;">
+                    <a id="menu-slidein-contact-v2" href="/contact" class="cta"><span class="pencil"></span> <span class="contact">Contact Us</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div class="f-container f-top-nav-outer" style="position: fixed; top:0; z-index: 500;">
+        <div class="f-header">
+            <div class="row">
+                <div class="f-top-bar">
+                    <div class="large-12 columns" style="padding-right: 0;">
+                        <ul >
+                            <li><a href="tel:617-286-2855">617.286.2855</a></li>
+                            <li><a href="contact.html" class="button orange">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="topnav" class="f-container navbar-fixed-top headroom-topnav" style="z-index: 400;">
+        <div class="f-top-nav">
+          <div class="f-top-nav-inner">
+            <div class="row">
+              <div class="col-md-4">
+                 <a href="#" aria-label="Navigate to Homepage" ><img class="apm-nav-logo" alt="Boomslang Property Management logo; blue font on a black background." src="assets/boomslang-logo_orange.svg" /></a>
+              </div>
+                <div class="large-9 columns offset-lg-6">
+                    <ul id="menu">
+
+                        <li><a href="/about/our-product" class="drop about">About<span></span></a>
+                            <div class="dropdown_1column"><!-- Begin 1 column container -->
+                                <div class="col_1">
+                                    <div class="trans_menu"></div>
+                                    <div class="menu_list">
+                                    
+                                        <h2 class="second-headers">COMPANY</h2>
+                                        <ul style="padding-bottom: 20px;">
+                                            <li><a href="https://www.appfolioinc.com" target="_blank">Our Company</a></li>
+                                            <li><a href="https://www.appfolioinc.com/about" target="_blank">Management Team</a></li>
+
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+          </div>
+        </div>
+    </div>
+  </nav> 
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark">
 
     <div class="container">
 
@@ -285,29 +358,35 @@ img.bordered{
           <ul class="sub-menu">
             <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Our Story</a></li>
             <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="services.html">Our Services</a></li>
-            <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="#">FAQ</a></li>
+            <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a href="faq.html">FAQ</a></li>
           </ul>
        </li>
         <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
   </div>
-</nav>
+</nav> -->
 
   <main id="main" role="main">
 
     <section id="hero" class="jumbotron accent-bg lazy-bg-with-filter" data-img-src="https://images.unsplash.com/photo-1458086294493-3a5a041289ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
 
-    <div class="lazy-filter-overlay"></div>
+
 
     <div class="container theme-light full">
       <div class="row align-items-center full">
         <div class="col-xl-7 col-lg-8 col-md-10">
-          <h1>Property Management by Property Investment Experts.</h1>
-          <p class="opaque"> Our investment centered management approach means we'll manage your property like it's our own business. You can sit back, relax and watch your equity grow.</p>
-          <div id="homepage-cta-button"><a href="contact.html" class="btn btn-trans btn-hover">Get In Touch</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
+          <h1>Executing property management from an investor’s perspective</h1>
+          <p ><strong>Boomslang Property Management & Investment Group has an investment-centered approach to property management.</p>
+            <p>As seasoned property owners ourselves, with extensive expertise in buying, selling, renovating, repositioning and managing properties, we have a unique perspective: We execute property management from an investor’s perspective. </p>
+ 
+            <p>Property management has traditionally been “fixing toilets and collecting rent” but we practice it as asset management and investment enhancement.
+             
+            We aim to be long term strategic partners with our clients helping them use real estate investments to achieve economic independence.</p>
+            </strong></p>
+          <!-- <div id="homepage-cta-button"><a href="contact.html" class="btn btn-trans btn-hover">We're doing great things check back in a few weeks to see what we’ve been up to</a><p class="opaque cta-hover-text d-none d-md-inline-block" data-src="We'll get back to you in<strong> less than 24 hours</strong>.">We'll get back to you in<strong> less than 24 hours</strong>.</p>
           </div>
-          <a href="services.html" class="btn btn-secondary d-md-none"><i class="fas fa-external-link-alt"></i>learn more</a>
+          <a href="services.html" class="btn btn-secondary d-md-none"><i class="fas fa-external-link-alt"></i>learn more</a> -->
         </div>
       </div>
     </div>
@@ -322,26 +401,13 @@ img.bordered{
     <div class="row align-items-center">
       <div class="col-12">
         <div id="portfolio-widget" class="scrollFade" data-index="0" data-fader-start="0.8" data-fader-offset="100">
-          <div class="pw-item active">
+         
+          <div class="pw-item active ">
             <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="/Users/moabdo-business/Desktop/BOOMSLANG/assets/tierra-mallorca-NpTbVOkkom8-unsplash.jpg"></div>
-            </div><div class="pw-content">
-              <h3>Investment Consulting</h3>
-              <p class="opaque">Want to invest in real estate rental properties, but not sure where to start? — As a full service group, Boomslang does extensive research so you know where to buy, what to spend, and what renovations are required. </p>
-              <ul class="tags" aria-label="tags">
-                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
-              </ul>
-              <div class="links">
-                <a href="http://boomslanggroup/services.html#anchor-name" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="pw-item ">
-            <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="/Users/moabdo-business/Desktop/BOOMSLANG/assets/jessica-furtney-YOoucEImrKw-unsplash.jpg"></div>
+              <div class="pw-desktop-image" data-image-source="assets/property-management.jpg"></div>
             </div><div class="pw-content">
               <h3>Property Management</h3>
-              <p class="opaque"> Hiring the right property management company can be a pain, we've been there ourselves. Property Management isn't just "fixing toilets and collecting rent", we practice PM as assett management and investment enhancement. </p>
+              <!-- <p class="opaque"> Hiring the right property management company can be a pain, we've been there ourselves. Property Management isn't just "fixing toilets and collecting rent", we practice PM as assett management and investment enhancement. </p> -->
               <ul class="tags" aria-label="tags">
                   <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
               </ul>
@@ -350,9 +416,23 @@ img.bordered{
               </div>
             </div>
           </div>
+          <div class="pw-item">
+              <div class="pw-images">
+                <div class="pw-desktop-image" data-image-source="assets/helloquence-5fNmWej4tAA-unsplash.jpg"></div>
+              </div><div class="pw-content">
+                <h3>Investment Consulting</h3>
+                <p class="opaque">Want to invest in real estate rental properties, but not sure where to start? — As a full service group, Boomslang does extensive research so you know where to buy, what to spend, and what renovations are required. </p>
+                <ul class="tags" aria-label="tags">
+                    <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
+                </ul>
+                <div class="links">
+                  <a href="http://boomslanggroup/services.html#anchor-name" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
+                </div>
+              </div>
+            </div>
           <div class="pw-item ">
             <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="/Users/moabdo-business/Desktop/BOOMSLANG/assets/matias-santana-tT4m1D16GJM-unsplash.jpg"></div>
+              <div class="pw-desktop-image" data-image-source="assets/construction_management.jpg"></div>
             </div><div class="pw-content">
               <h3>Construction Management</h3>
               <p class="opaque">Whether a project involves renovation or is a ground up construciton, it's time you stopped letting construction projects scare you. Key relationships, creative solutions, and transparency are the vital components that breed exceptional construction projects.</p>
@@ -366,9 +446,9 @@ img.bordered{
           </div>
           <div class="pw-item ">
             <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="/Users/moabdo-business/Desktop/BOOMSLANG/assets/helloquence-5fNmWej4tAA-unsplash.jpg"></div>
+              <div class="pw-desktop-image" data-image-source="assets/brokerage.jpg"></div>
             </div><div class="pw-content">
-              <h3>Underwriting</h3>
+              <h3>Brokerage</h3>
               <p class="opaque">We examine, identify, measure, and highlight investment risks for all real estate transactions. No catastrophic surprises and you'll have all the information you need so you can make the best investment decision possible.</p>
               <ul class="tags" aria-label="tags">
                   <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
@@ -378,34 +458,8 @@ img.bordered{
               </div>
             </div>
           </div>
-          <div class="pw-item ">
-            <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="/Users/moabdo-business/Desktop/BOOMSLANG/assets/repositioning.jpg"></div>
-            </div><div class="pw-content">
-              <h3>Selecting & Repositioning Property</h3>
-              <p class="opaque">Don't pull the selling trigger just yet. Let our experts show you how your property would receive a significant boost in value from asset repositioning instead of offloading and starting from the ground up again. </p>
-              <ul class="tags" aria-label="tags">
-                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
-              </ul>
-              <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="pw-item ">
-            <div class="pw-images">
-              <div class="pw-desktop-image" data-image-source="assets/eco-warrior-princess-TsOeGUwWzWo-unsplash.jpg"></div>
-            </div><div class="pw-content">
-              <h3>Maintenance</h3>
-              <p class="opaque">Is the rock climbing community ready for my upcoming mobile application? Find out as we take a deep dive into product validation!</p>
-              <ul class="tags" aria-label="tags">
-                  <li><a href="#">Custom Site Build</a></li><li><a href="#">Landing Page</a></li>
-              </ul>
-              <div class="links">
-                  <a href="https://www.biznews.com" target="_blank" rel="noopener" class="opaque"><i class="fas fa-external-link-alt"></i>Learn More</a>
-              </div>
-            </div>
-          </div>
+      
+        
           <div id="pw-controls" aria-label="Portfolio Carousel Controls">
             <a href="#" class="pw-control backward" aria-label="Previous Portfolio Item"><i class="fas fa-angle-left"></i></a><a href="#" class="pw-control forward" aria-label="Next Portfolio Item"><i class="fas fa-angle-right"></i></a>
           </div>
@@ -486,7 +540,7 @@ img.bordered{
 </section>
 
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS
 
 
 <section id="testimonials">
@@ -562,7 +616,7 @@ img.bordered{
 
 </div>
 </div>
-</section>
+</section> -->
 
     <div id="contact-widget">
       <div class="cw-container">
@@ -608,7 +662,7 @@ img.bordered{
                         Looks good!
                       </div>
                     </div>
-                    <div class="col-md-4 mb-3 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
+                    <div class="col-md-4 mb-2 wrap-input100" data-validate = "Valid phone is required: ex@abc.xyz">
                       <input type="tel" class="form-control input100" id="form_phone" placeholder="(xxx)-xxx-xxxx" required>
                       <span class="focus-input100"></span>
 						          <span class="symbol-input100">
@@ -622,86 +676,11 @@ img.bordered{
                     </div>
                   </div>
                   <div class="form-row mt-4">
-                    <div class="col-md-4  wrap-input100">
-                      <input type="text" class="form-control input100" id="validationCustom03" placeholder="your city" required>
-                      <span class="focus-input100"></span>
-						          <span class="symbol-input100">
-							          <i class="fa fa-city" aria-hidden="true"></i>
-						          </span>
-                      <div class="invalid-feedback">
-                        Please provide a valid city.
-                      </div>
-                    </div>
-                    <div class="col-md-4 wrap-input100">
-                      <select class="custom-select input100 " id="validationCustom04" required>
-                        <option selected disabled value="">STATE</option>
-                        <option>ALABAMA</option>
-                        <option>ALASKA</option>
-                        <option>ARIZONA</option>
-                        <option>ARKANSAS</option>
-                        <option>CALIFORNIA</option>
-                        <option>COLORADO</option>
-                        <option>CONNECTICUT</option>
-                        <option>DELAWARE</option>
-                        <option>FLORIDA</option>
-                        <option>GEORGIA</option>
-                        <option>HAWAII</option>
-                        <option>IDAHO</option>
-                        <option>ILLINOIS</option>
-                        <option>INDIANA</option>
-                        <option>IOWA</option>
-                        <option>KANSAS</option>
-                        <option>KENTUCKY</option>
-                        <option>LOUISIANA</option>
-                        <option>MAINE</option>
-                        <option>MASSACHUSETTS</option>
-                        <option>MICHIGAN</option>
-                        <option>MINNESOTA</option>
-                        <option>MISSISSIPPI</option>
-                        <option>MISSOURI</option>
-                        <option>MONTANA</option>
-                        <option>NEBRASKA</option>
-                        <option>NEVADA</option>
-                        <option>NEW HAMPSHIRE</option>
-                        <option>NEW JERSEY</option>
-                        <option>NEW MEXICO</option>
-                        <option>NEW YORK</option>
-                        <option>NORTH CAROLINA</option>
-                        <option>NORTH DAKOTA</option>
-                        <option>OHIO</option>
-                        <option>OKLAHOMA</option>
-                        <option>OREGON</option>
-                        <option>PENNSYLVANIA</option>
-                        <option>RHODE ISLAND</option>
-                        <option>SOUTH CAROLINA</option>
-                        <option>SOUTH DAKOTA</option>
-                        <option>TENNESSEE</option>
-                        <option>TEXAS</option>
-                        <option>UTAH</option>
-                        <option>VERMONT</option>
-                        <option>VIRGINIA</option>
-                        <option>WASHINGTON</option>
-                        <option>WEST VIRGINIA</option>
-                        <option>WISCONSIN</option>
-                        <option>WYOMING</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid state.
-                      </div>
-                    </div>
-                    <div class="col-md-4 wrap-input100">
-                      <input type="text" class="form-control input100" placeholder="zip code" id="validationCustom05" required>
-                      <span class="focus-input100"></span>
-						          <span class="symbol-input100">
-							          <i class="fa fa-envelope-open" aria-hidden="true"></i>
-						          </span>
-                      <div class="invalid-feedback">
-                        Please provide a valid zip.
-                      </div>
-                    </div>
+                   
+                  
                   </div>
                 <div class="form-row">
-                  <div class="col-md-6 mt-4 mb-3 wrap-input100">
+                  <div class="col-md-6 mt-2 mb-3 wrap-input100">
                       <div class="form-group">
                           <label for="form_need">subject *</label>
                           <select id="form_need" name="need" class="form-control input100" required="required" data-error="Please specify your need.">
@@ -757,22 +736,22 @@ img.bordered{
         </div>
 
       <nav id="footer-links" class="row">
-        <div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
+        <!-- <div id="footer-1" class="col-md-2 offset-lg-5 offset-md-4 col-sm-2 offset-sm-0">
           <p>Company</p>
           <ul>
             <li><a target="" href="">Story</a></li><li><a target="" href="services.html">Services</a></li><li><a target="" href="#">Testimonials</a></li>
           </ul>
-        </div>
-        <div id="footer-2" class="col-md-2">
+        </div> -->
+        <!-- <div id="footer-2" class="col-md-2">
           <p> </p>
           <ul>
             <li><a target="" href="contact.html">Contact</a></li><li><a target="" href="#">Partnerships</a></li><li><a target="_blank" href="#">LinkedIn Profile</a></li><li><a target="_blank" href="">LinkedIn</a></li>
           </ul>
-        </div>
-        <div id="footer-3" class="col-lg-3 col-md-4">
+        </div> -->
+        <div id="footer-3" class="col-lg-3 col-md-4 offset-lg-9 offset-md-4 offset-sm-0">
           <p>Get In Touch</p>
           <ul>
-            <li><i class="fas fa-phone"></i><a target="" href="tel: +1(617) 866-7777">+1(617) 866-7777</a></li><li><i class="fas fa-envelope"></i><a target="" href="/cdn-cgi/l/email-protection#b696dbd7c4d5f6dddfdad9d4cfc2d3c5c2c3d2dfd9c598d9c4d1"><span class="__cf_email__" data-cfemail="88e5e9faebc8e3e1e4e7eaf1fcedfbfcfdece1e7fba6e7faef">[email&#160;protected]</span></a></li><li><i class="fas fa-calendar-alt"></i><a target="_blank" href="">Schedule A Consultation</a></li>
+            <li><i class="fas fa-phone"></i><a target="" href="tel: +1(617) 286-2855">+1(617) 866-7777</a></li><li><i class="fas fa-envelope"></i><a target="" href="/cdn-cgi/l/email-protection#b696dbd7c4d5f6dddfdad9d4cfc2d3c5c2c3d2dfd9c598d9c4d1"><span class="__cf_email__" data-cfemail="88e5e9faebc8e3e1e4e7eaf1fcedfbfcfdece1e7fba6e7faef">[email&#160;protected]</span></a></li><li><i class="fas fa-calendar-alt"></i><a target="_blank" href="">Schedule A Consultation</a></li>
           </ul>
         </div>
       </nav>
@@ -797,9 +776,13 @@ img.bordered{
 // var myAjax = {"ajaxUrl":"https:\/\/\/\/admin-ajax.php"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/Users/moabdo-business/Desktop/BOOMSLANG/js/main.js'></script>
+<script type='text/javascript' src='assets/js/compressed.min.js'></script>
+<script type='text/javascript' src='assets/js/main.js'></script>
 <script type='text/javascript' src='assets/enlighter/mootools-core-yc.js'></script>
 <script type='text/javascript' src='assets/enlighter/EnlighterJS.min.js'></script>
+
+
+
 
 
 <script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":true,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script>
